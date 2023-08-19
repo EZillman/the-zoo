@@ -1,9 +1,12 @@
+import { Navigation } from "./Navigation"
 
 export const Home = () => {
 
     return (
         <>
-        <h1>Homepage</h1>
+        <Navigation></Navigation>
+        <h2>Hem</h2>
+        <p>Välkommen till mitt zoo!</p>
         </>
     )
 }

@@ -1,9 +1,11 @@
+import { Navigation } from "./Navigation"
 
 export const Animals = () => {
 
     return (
         <>
-          <h2>All animals</h2>
+          <Navigation></Navigation>
+          <h2>Alla djur</h2>
         </>
     )
 }
