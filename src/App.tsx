@@ -5,6 +5,14 @@ import { router } from './Router'
 
 function App() {
 
+  const [animals, setAnimals] = useState<IAnimal[]>([]);
+
+  useEffect(() => {
+    async function fetchAnimals() {
+      const animalData = await getAnimals();
+      setAnimals(animalData);
+    }
+  })
 
   return (
     <>
