@@ -1,12 +1,20 @@
+import { useState, useEffect } from "react";
 import { IAnimal } from "../models/IAnimal"
+import { getAnimals } from "../services/animalService";
 import { Navigation } from "./Navigation"
 
 
-interface IAnimalsProps {
-  animals: IAnimal[];
-}
-
 export const Animals = () => {
+
+  const [animals, setAnimals] = useState<IAnimal[]>([]);
+
+  useEffect(() => {
+    async function fetchAnimals() {
+    const animalData = await getAnimals();
+    setAnimals(animalData);
+    }
+    fetchAnimals();
+  }, [])
 
     return (
         <>

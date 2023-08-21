@@ -1,18 +1,12 @@
-
 import { RouterProvider } from 'react-router-dom'
 import './App.css'
 import { router } from './Router'
+//import { useEffect, useMemo, useState } from 'react';
+//import { Animals } from './components/Animals';
+//import { IAnimal } from './models/IAnimal';
+//import { getAnimals } from './services/animalService';
 
 function App() {
-
-  const [animals, setAnimals] = useState<IAnimal[]>([]);
-
-  useEffect(() => {
-    async function fetchAnimals() {
-      const animalData = await getAnimals();
-      setAnimals(animalData);
-    }
-  })
 
   return (
     <>
