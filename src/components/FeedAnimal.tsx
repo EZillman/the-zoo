@@ -3,7 +3,7 @@ export const FeedAnimal = () => {
 
     return (
         <>
-          <button>Feed</button>
+          <button>Mata djur</button>
         </>
     )
 }

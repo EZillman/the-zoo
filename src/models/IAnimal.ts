@@ -5,6 +5,7 @@ export interface IAnimal {
     shortDescription: string;
     longDescription: string;
     imageUrl: string;
+    medicine: string;
     isFed: boolean;
     lastFed: string;
 }
