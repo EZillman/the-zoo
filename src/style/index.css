@@ -15,11 +15,22 @@
 }
 
 ul {
-  background-color: #6D5D6E;
+  font-size: 2em;
+  background-color: #5C5470;
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
+  padding: 0;
   position: relative;
+  width: 8rem;
+  transition: all 0.3s ease-in-out;  
+  border-radius: 0.2rem;
+}
+
+ul:hover {
+  font-size: 2.5em;
+  cursor: pointer;
+  border: 0.1rem solid #FAF0E6;
+
+
 }
 
 a {
@@ -28,7 +39,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #c1bbbb;
+  color: #faf7f5;
 }
 
 body {
@@ -45,10 +56,8 @@ h1 {
   background-color: #5C5470;
   position: relative;
   margin-top: 0;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  padding: 1em;
+  width: 97vw;
+  padding: 1.5rem;
 }
 
 button {

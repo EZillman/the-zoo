@@ -31,13 +31,14 @@ export const Animal = () => {
 
     return (
         <>
-          <Navigation></Navigation>
           <div>
-            <h2>{animal.name}</h2>
+            
+            <h1>{animal.name}</h1>
+            <Navigation></Navigation>
             <img src={animal.imageUrl} alt="Bild saknas"/>
             <p>{animal.yearOfBirth}</p>
             <p>Mediciner: {animal.medicine}</p>
-            <p>{animal.longDescription}</p>
+            <p className="long-description">{animal.longDescription}</p>
           </div>
           <FeedAnimal></FeedAnimal>
         </>
