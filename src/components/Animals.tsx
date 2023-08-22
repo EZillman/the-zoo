@@ -8,7 +8,7 @@ export const Animals = () => {
 
   const navigate = useNavigate();
 
-  const handleAnimalClick = (id: string) => {
+  const handleAnimalClick = (id: number) => {
     navigate(`/animal/${id}`)
   }
 
@@ -27,11 +27,11 @@ export const Animals = () => {
           <div>
             {animals.map(animal => (
               <div 
-              onClick={() => handleAnimalClick("animal")}
+              onClick={() => handleAnimalClick(animal.id)}
               key={animal.id}>
                 <h3>{animal.name}</h3>
                 <p>{animal.shortDescription}</p>
-                <img src={animal.imageUrl} alt={animal.name}/>
+                <img src={animal.imageUrl} alt="Bild saknas"/>
               </div>
             ))}
           </div>

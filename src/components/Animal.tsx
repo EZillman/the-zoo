@@ -20,7 +20,13 @@ export const Animal = () => {
   }, [id])
 
   if (!animal) {
-    return <div>Kan inte hitta djur</div>
+    return (
+      <>      
+        <Navigation></Navigation>
+        <div>Kan inte hitta djur</div>
+      </>
+
+    )
   }
 
     return (
@@ -28,6 +34,10 @@ export const Animal = () => {
           <Navigation></Navigation>
           <div>
             <h2>{animal.name}</h2>
+            <img src={animal.imageUrl} alt="Bild saknas"/>
+            <p>{animal.yearOfBirth}</p>
+            <p>Mediciner: {animal.medicine}</p>
+            <p>{animal.longDescription}</p>
           </div>
           <FeedAnimal></FeedAnimal>
         </>
