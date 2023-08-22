@@ -24,17 +24,18 @@ export const Animals = () => {
 
           <h1>Mitt Zoo</h1>
           <p>Välkommen till mitt Zoo! Djuren är hungriga och jag har tyvärr inte tid att mata dem, men du kanske kan? Börja med att klicka på ett djur!</p>
-          <div className="animals-container">
+          <section className="animals-container">
             {animals.map(animal => (
-              <div 
+              <article 
+              className="animal-container"
               onClick={() => handleAnimalClick(animal.id)}
               key={animal.id}>
                 <h3>{animal.name}</h3>
                 <p>{animal.shortDescription}</p>
                 <img src={animal.imageUrl} alt="Bild saknas"/>
-              </div>
+              </article>
             ))}
-          </div>
+          </section>
         </>
     )
 }
