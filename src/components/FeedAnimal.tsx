@@ -1,5 +1,5 @@
 
-export const Feed = () => {
+export const FeedAnimal = () => {
 
     return (
         <>

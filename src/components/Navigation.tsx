@@ -8,9 +8,6 @@ export const Navigation = () => {
                 <li>
                     <Link to="/">Hem</Link>
                 </li>
-                <li>
-                    <Link to="/animals">Djuren</Link>
-                </li>
             </ul>
         </nav>
         </>
