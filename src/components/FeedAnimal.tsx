@@ -28,7 +28,7 @@ export const FeedAnimal = ({animal}: IFeedAnimalProps) => {
     return (
         <>
           <button onClick={() => handleFeedClick()} disabled={isFed}>
-            Mata djur
+            {isFed ? `${animal.name} har fått mat` : `Mata ${animal.name}`}
           </button>
           <p>{animal.name} var senast matad: {animal.lastFed}</p>
         </>
