@@ -40,7 +40,7 @@ export const Animal = () => {
             <p>Mediciner: {animal.medicine}</p>
             <p className="long-description">{animal.longDescription}</p>
           </div>
-          <FeedAnimal></FeedAnimal>
+          <FeedAnimal animal={animal}></FeedAnimal>
         </>
     )
 }
