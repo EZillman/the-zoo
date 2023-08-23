@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import "../style/Animals.css"
 
 export const Animals = () => {
-
   const navigate = useNavigate();
 
   const handleAnimalClick = (id: number) => {
@@ -21,7 +20,6 @@ export const Animals = () => {
 
     return (
         <>
-
           <h1>Mitt Zoo</h1>
           <p>Välkommen till mitt Zoo! Djuren är hungriga och jag har tyvärr inte tid att mata dem, men du kanske kan? Börja med att klicka på ett djur!</p>
           <section className="animals-container">

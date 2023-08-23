@@ -6,9 +6,7 @@ import { IAnimal } from "../models/IAnimal";
 import { getAnimalsFromLocalStorage } from "../services/animalService";
 
 export const Animal = () => {
-
   const { id } = useParams();
-
   const [animal, setAnimal] = useState<IAnimal | null>(null);
 
   useEffect(() => {
@@ -32,7 +30,6 @@ export const Animal = () => {
     return (
         <>
           <div>
-            
             <h1>{animal.name}</h1>
             <Navigation></Navigation>
             <img src={animal.imageUrl} alt="Bild saknas"/>

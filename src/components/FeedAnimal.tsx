@@ -10,7 +10,19 @@ export const FeedAnimal = ({animal}: IFeedAnimalProps) => {
 
   const handleFeedClick = () => {
     setIsFed(true);
-    console.log(isFed);
+
+    const currentTime = new Date().toString();
+    animal.lastFed = currentTime;
+    console.log(animal.name, "var senast matad: ", currentTime)
+
+    const savedAnimals = JSON.parse(localStorage.getItem("animals") || "[]");
+    const updatedAnimals = savedAnimals.map((savedAnimal: IAnimal) => {
+      if (savedAnimal.id === animal.id) {
+        return animal;
+      }
+      return savedAnimal;
+    })
+    localStorage.setItem("animals", JSON.stringify(updatedAnimals));
   }
 
     return (
