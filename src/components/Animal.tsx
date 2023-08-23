@@ -29,14 +29,17 @@ export const Animal = () => {
 
     return (
         <>
-          <div>
-            <h1>{animal.name}</h1>
+          <section>
+            <h1 className="animal-name">{animal.name}</h1>
             <Navigation></Navigation>
-            <img src={animal.imageUrl} alt="Bild saknas"/>
-            <p>{animal.yearOfBirth}</p>
-            <p>Mediciner: {animal.medicine}</p>
-            <p className="long-description">{animal.longDescription}</p>
-          </div>
+            <article className="animal-presentation">
+              <img src={animal.imageUrl} alt="Bild saknas"/>
+              <p>{animal.yearOfBirth}</p>
+              <p>Mediciner: {animal.medicine}</p>
+              <p className="long-description">{animal.longDescription}</p>
+            </article>
+
+          </section>
           <FeedAnimal animal={animal}></FeedAnimal>
         </>
     )

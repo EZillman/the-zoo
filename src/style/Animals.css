@@ -13,10 +13,27 @@
     margin: 0.2rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;  
+  }
+  .animal-container:hover {
+    cursor: pointer;
+    color: #5C5470;
+    background-color: #FAF0E6;
+  }
+
+  .animal-name {
+    width: 100vw;
+    position: absolute;
+    top: 0;
+  }
+
+  .animal-presentation {
+    width: 100vw;
+    margin-top: 5rem;
   }
 
   .long-description {
-    width: 48rem;
+    max-width: 48rem;
     margin: auto;
   }
  
@@ -24,5 +41,6 @@
     max-width: 100%;
     max-height: 20rem;
     object-fit: contain;
+    border-radius: 0.3rem;
   }
   

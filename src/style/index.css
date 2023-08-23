@@ -19,10 +19,12 @@ ul {
   background-color: #5C5470;
   list-style-type: none;
   padding: 0;
-  position: relative;
+  position: absolute;
+  top: 0.5rem;
   width: 8rem;
   transition: all 0.3s ease-in-out;  
   border-radius: 0.2rem;
+  z-index: 2;
 }
 
 ul:hover {
@@ -54,7 +56,6 @@ h1 {
   background-color: #5C5470;
   position: relative;
   margin-top: 0;
-  width: 97vw;
   padding: 1.5rem;
 }
 
